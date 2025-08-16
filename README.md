@@ -11,26 +11,44 @@ A Python utility for inserting or marking `extra-phrases` in text.
 
 ---
 
-## Installation
+# Installation
 
 Clone the repository and set up a virtual environment:
 
-```bash
+```
 git clone https://github.com/alok1304/mark-extra-phrase.git
 cd mark-extra-phrase
-
-# Create and activate virtual environment
+```
+Create and activate virtual environment
+```
 python -m venv venv
-# On Linux/macOS
+```
+On Linux/macOS
+```
 source venv/bin/activate
-# On Windows (PowerShell)
+```
+On Windows (PowerShell)
+```
 .\venv\Scripts\Activate.ps1
+```
 
-# Install dependencies
+Install dependencies
+```
 pip install -r requirements.txt
-
-# Running Tests
-
+```
+        
+Running Tests
 Run tests using pytest:
-
+```
 python -m pytest -v tests/
+```
+
+# Usages 
+After cloning this repository, you can mark extra phrases in any file or folder by running:
+```
+py mark-extra-phrase/src/insert_phrase.py /path/to/file-or-folder
+```
+# Example
+```
+py mark-extra-phrase/src/insert_phrase.py src/licensedcode/data/rules
+```
